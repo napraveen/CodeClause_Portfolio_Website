@@ -1,0 +1,69 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{%static 'css/indstyle.css' %}">
+</head>
+{%if user.is_authenticated%}
+{%if user.username == "admin"%}
+<body>
+    <div>
+        <div class="top">
+           <img src="/static/img/logo.jpeg" id="dp">
+           <h1 id="logoname">Portfolio</h1> 
+            <ul>
+                <a href="admin"><li>Home</li></a>
+                <a href="templ"><li>Template</li></a>
+                <a href="contact"><li>Contact</li></a>
+            </ul>
+            <a href="login"><input type="button" id="login" value="LOG IN"></a>
+        </div>
+        <div class="body">
+            <h1 id="cont">Build My Resume</h1>
+            <a href="login"><button id="but">Build my Resume</button></a>
+        </div>
+    </div>
+</body>
+{%else%}
+<body>
+    <div>
+        <div class="top">
+           <img src="/static/img/logo.jpeg" id="dp">
+           <h1 id="logoname">Portfolio</h1> 
+            <ul>
+                <a href="admin"><li>Home</li></a>
+                <a href="templ"><li>Template</li></a>
+                <a href="contact"><li>Contact</li></a>
+            </ul>
+            <a href="logout"><input type="button" id="login" value="LOG OUT"></a>
+        </div>
+        <div class="body">
+            <h1 id="cont">Build My Resume</h1>
+            <a href="new"><button id="but">Build my Resume</button></a>
+        </div>
+    </div>
+</body>
+{%endif%}
+{%else%}
+<body>
+    <div class="top">
+        <img src="/static/img/logo.jpeg" id="dp">
+        <h1 id="logoname">Portfolio</h1> 
+        <ul>
+            <a href="/"><li>Home</li></a>
+            <a href="templ"><li>Template</li></a>
+            <a href="contact"><li>Contact</li></a>
+        </ul>
+        <a href="login"><input type="button" id="login" value="LOG IN"></a>
+    </div>
+    <div class="body">
+        <h1 id="cont">Build My Resume</h1>
+        <a href="login"><button id="but">Build my Resume</button></a>
+    </div>
+</body>
+{%endif%}
+</html>

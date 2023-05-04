@@ -1,0 +1,35 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/template1.css' %}">
+    <title>Document</title>
+</head>
+{%if user.is_authenticated%}
+{%for person in persons%}
+{%if person.username == user.username%}
+<body>
+    <div class="full">
+        <div class="left">
+            <div class="content-left">
+                <h1>Hi There!</h1>
+                <h1>I'm {{person.name}}</h1>
+                <h3>I'm a {{person.selfdesc}}</h3>
+                <button type="button"><input type="text" placeholder="Clickable"></button>
+                <input type="text" placeholder="Enter Link">
+            </div>
+
+        </div>
+        <div class="right">
+
+        </div>
+    </div>
+</body>
+{%endif%}
+{%endfor%} 
+{%endif%} 
+</html>

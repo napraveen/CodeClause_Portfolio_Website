@@ -1,0 +1,67 @@
+body{
+    background: url("/static/img/new.avif");
+    background-repeat: no-repeat;
+    background-size: 1165px 520px;
+    
+}
+
+h1{
+    color: black;
+    margin-bottom: 30px;
+    margin-right: 0px;
+}
+
+.lgin {
+    margin-top: 00px;
+    text-align: center;
+    
+}
+
+#username{
+    margin-bottom: px;
+}
+
+
+
+input{
+    font-size: 20px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border: ;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+
+input::placeholder{
+    font-size: 13px;
+}
+
+#submit{
+    border: none;
+    background-color: green;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+#nuser{
+    margin-left: 450px;
+    color: black;
+}
+a{
+    color: rgb(255, 85, 0);
+    margin-left: 10px;
+}

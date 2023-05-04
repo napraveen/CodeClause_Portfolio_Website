@@ -1,0 +1,96 @@
+body{
+    /* background-color: rgb(164, 224, 45); */
+    background-image: url(/static/img/images.jpeg);
+    background-repeat: no-repeat;
+    background-size: 1165px 520px;
+}
+
+h1{
+    margin-bottom: 50px;
+    margin-left: 60px;
+    color: rgb(226, 194, 255);
+}
+
+.lgin {
+    margin-top: 70px;
+    text-align: center;
+    color: rgb(220, 213, 213);
+}
+
+#username{
+    margin-bottom: 30px;
+}
+
+label{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+input{
+    font-size: 20px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    font-size: 13px;
+}
+
+#submit{
+    margin-top:40px;
+    border: none;
+    background-color: rgb(34, 198, 16);
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 60px;
+    border-radius: 20px;
+}
+
+#nuser{
+    margin-left: 530px;
+    margin-top: 40px;
+    color: rgb(248, 252, 235);
+}
+
+a{
+    color: rgb(154, 236, 131);
+}
+
+ul{
+    list-style: none;
+    margin-left: 700px;
+    display: flex;
+    margin-top: 40px;
+
+}
+
+ul li{
+    margin-right: 70px;
+    color: rgba(0, 0, 0, 0.614);
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+input{
+    background-color: rgb(244, 242, 242);
+}
+
+a li
+{
+
+    color: rgba(112, 230, 224, 0.783);
+}
+
+ul{
+    margin-left: 800px;
+}

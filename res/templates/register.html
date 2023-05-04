@@ -1,0 +1,42 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/regstyle.css' %}">
+    <title>Chat App</title>
+</head>
+<body>
+
+    <style>
+        h5{
+            color: red;
+            text-align: center;
+        }
+    </style>
+
+
+    <form method="POST" action="register">
+        {% csrf_token %}
+
+        <div class="lgin">
+            <h1>Sign in</h1>
+            <input type="text" id="username" name="username" placeholder="Create your Username"><br>
+            <input type="email" id="email" name="email" placeholder="Enter your Email"><br>
+            <input type="password" id="password" name="password" placeholder="Enter your Password"><br>
+            <input type="password" id="password2" name="password2" placeholder="Repeat your Password"><br>
+            <input type="submit" id="submit">
+            
+        </div>
+        <p id="nuser">Already Have an Account?<a href="login">Login Here</a></p>
+
+    </form>
+
+    {% for message in messages %}
+    <h5>{{message}}</h5>
+    {% endfor %}
+
+</body>
+</html>

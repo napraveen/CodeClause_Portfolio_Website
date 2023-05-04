@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+*{
+    margin: 0px;
+}
+
+.left{
+    height: 980px;
+    width: 450px;
+    background-color: rgb(255, 234, 0);
+}
+
+body{
+    background-color: white;
+}
+
+#whole{
+    display: flex;
+}
+
+.lgin{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+input{
+    font-size: 23px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(211, 234, 215, 0.587);
+}
+
+input::placeholder{
+    font-size: 13px;
+    padding-left: 10px;
+    color: #474747;
+
+}
+
+label{
+    font-size: 20px;
+}
+#username{
+    margin-top: 80px;
+    margin-left: 110px;
+}
+#name{
+    margin-left: 154px;
+
+    
+}
+
+#email{
+    margin-left: 153px;
+}
+
+#mobileno{
+    margin-left: 114px;
+}
+
+#city{
+    margin-left: 175px;
+}
+
+#gender{
+    margin-left: 90px;
+}
+
+#organpl{
+    margin-left: 30px;
+}
+
+#bloodgr{
+    margin-left: 45px;
+}
+
+#log-img{
+    /* margin-top: 100px; */
+    height: 1100px;
+    width: 1150px;
+    /* margin-left: 140px */
+}
+
+h3{
+    margin-top: 50px;
+    margin-left: 150px;
+
+}
+
+#p1{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+#p2{
+    margin-left: 110px;
+}
+
+#submit{
+    margin-left: 150px;
+    margin-top: 20px;
+    background-color: rgb(8, 247, 147);
+}
+
+#submit{
+    font-size: 25px;
+    
+}
+
+ul{
+    list-style: none;
+    margin-left: 200px;
+    display: flex;
+    margin-top: -70px;
+    font-family: 'Paytone One', sans-serif;
+
+
+}
+
+ul li{
+    margin-right: 70px;
+    
+    color: rgba(0, 0, 0, 0.614);
+}
+
+a{
+    text-decoration: none;
+}
+
+#skill1{
+    margin-left: 157px;
+}
+
+#skill2{
+    margin-left: 157px;
+}
+
+#skill3{
+    margin-left: 157px;
+}
+
+#post{
+    margin-left: 136px;
+}
+
+#selfdesc{
+    margin-left: 35px;
+}
+
+#we1{
+    margin-left: 39px;
+}
+
+#des1{
+    margin-left: 87px;
+}
+
+#we2{
+    margin-left: 64px;
+}
+
+#des2{
+    margin-left: 48px;
+}
+
+#we3{
+    margin-left: 64px;
+}
+
+#des3{
+    margin-left: 48px;
+}
+
+#eq{
+    margin-left: 114px;
+}
+
+label
+{
+    font-family: 'Paytone One', sans-serif;
+}

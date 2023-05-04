@@ -1,0 +1,83 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/resstyle.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+</head>
+<body onclick="downl()">
+    {%if user.is_authenticated%}
+    {%for person in persons%}
+    {%if person.username == user.username%}
+    <div class="whole">
+        <div class="lside">
+            <img src="/static/img/user.webp" id="profile">
+            <h3 id="cont">CONTACT</h3>
+            <div class="contact">
+                <img src="/static/img/gmail.png" height="15px" width="15px">
+                <p><li>{{person.email}}</li></p>
+            </div>
+            <div class="contact">
+                <img src="/static/img/phone.png" height="15px" width="15px">
+                <p><li>{{person.mobile}}</li></p>
+            </div>
+            <div class="contact">
+                <img src="/static/img/location.webp" height="15px" width="15px">
+                <p><li>{{person.city}}</li></p>
+
+            </div>
+
+
+            <h3 id="exp">EXPERTISE</h3>
+            <div class="skills">
+                <p><li>{{person.skill1}}</li></p>
+                <p><li>{{person.skill2}}</li></p>
+                <p><li>{{person.skill3}}</li></p>
+            </div>
+
+
+        </div>
+        <div class="rside">
+            <h1 id="name">{{person.name}}</h1>
+            <h3 id="post">{{person.post}}</h3>
+            <p id="selfdesc">{{person.selfdesc}}</p>
+            <p id="dash">________________________________________________</p>
+            <h2 id="we">Work Experience</h2>
+            <h3 id="we1">{{person.we1}}</h3>
+            <p id="des1">{{person.des1}}</p>
+            <p id="dash">________________________________________________</p>
+            <h2 id="we">Certifications</h2>
+            <h3 id="we2">{{person.we2}}</h3>
+            <p id="des2"> {{person.des2}}</p>
+            <h3 id="we3">{{person.we3}}</h3>
+            <p id="des3">{{person.des3}}</p>
+
+            <div id="edu">
+                <h2 id="ed"> EDUCATION: </h2>
+                <p id="eq">{{person.eq}}</p>
+            </div>
+
+        </div>
+    </div>
+    {%endif%}
+    {%endfor%}
+    {%endif%}
+
+    
+</body>
+</html>
+
+<script>
+    function downl(){
+        window.print();
+    }
+
+</script>

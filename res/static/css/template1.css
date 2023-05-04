@@ -1,0 +1,24 @@
+.full
+{
+    display: flex;
+}
+.left
+{
+    height: 560px;
+    width: 600px;
+    background-color: yellow;
+    
+}
+
+.right
+{
+    height: 560px;
+    width: 600px;
+    background-color: green;
+}
+
+.content-left
+{
+    margin-left: 100px;
+    margin-top: 150px;
+}
